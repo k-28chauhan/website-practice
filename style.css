@@ -1,227 +1,292 @@
-html{
-    font-size: 14px;
+html {
+    font-size: 16px;
+
 }
-body{
+
+body {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 26px;
+    background-color: #FFF8F0;
+    color: #55206D;
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
-    color: #444444;
 }
-h1,  h2, h3, h4, h5, h6 {
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
-    color: #222222;
+
+h1 {
+    font-family: "League Spartan", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 50px;
+    text-align: left;
+    color: #190D37;
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
-h1{font-size: 2.5rem;}
-h2{font-size: 2rem;}
-h3{font-size: 1.75rem;}
-h4{font-size: 1.5rem;}
-h5{font-size: 1.25rem;}
-h6{font-size: 1rem;}
-a{
-    text-decoration: none;
-    color: #456fe2;
+
+h2 {
+    font-family: "League Spartan", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    color: #000000;
 }
-a:hover{
-    color: #162d6e;
+
+.bigtext {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+
 }
-#navbar{
-    padding: 6px;
-    margin: 0;
-}
-#logo{
-    display: block;
-}
-#logo-with-text{
-    display: none;
-}
-#banner{
-    object-fit: cover;
-    height: 150px;
-    width: 100%;
-}
-h1{
-    text-align: center;
-    margin: 12px 0;
-}
-#about{
-    margin: 0 auto;
+
+#hero-section {
     display: flex;
-    flex-direction: column;
-    max-width: 500px;
-    padding: 8px;   
+    max-width: 1060px;
+    margin: 0 auto 48px auto;
 }
-#description{
-    font-size: 1.25rem;
-}
-#team{
-    width: 100%;
-}
-#team-image{
-    border-radius: 5px;
-    width: 100%;
-}
-h2{
-    text-align: center;
-}
-#jobs{
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 0 8px;
-}
-#jobs-list{
-    display: block;
-}
-#jobs-table{
-    display: none;
-}
-.job{
-    border: 1px solid #dddddd;
-    margin-top: 8px;
-    border-radius: 5px;
-    padding: 8px;
-}
-.job-title{
-    font-size: 1.25rem;
-    font-weight: 500;
-    color: #222222;
-}
-.job-detail{
-    margin-top: 4px;
-    color: #555555;
 
+#hero-text {
+    padding: 32px 20px 32px 20px;
+    width: 50%;
 }
-#application{
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 0 8px;
+
+#hero-image-wrapper {
+    width: 50%;
 }
-.form-group {
-    margin-top: 16px;
+
+#hero-image {
+    width: 100%;
 }
-.form-group textarea{
-    font-family: 'Times New Roman', Times, serif;
+
+.small-text {
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    columns: black;
 }
-.form-group input[type="checkbox"]{
-    width: 16px;
-    height: 16px;
+
+#hi-and-name {
+    margin-top: 20px;
 }
-.form-group input[type="submit"]{
-    background-color: rgb(21, 54, 65);
-    color: ghostwhite;
+
+#contact-button {
+    font-family: Inter;
+    font-size: 16px;
     font-weight: 500;
-    cursor:pointer;
+    height: 44px;
+    width: 138px;
+    border-radius: 4px;
+    line-height: 19px;
+    background-color: #2F2F2F;
+    color: white;
+    margin-top: 20px;
+    cursor: pointer;
 }
-.form-group label {
+
+#pricing-section {
+    max-width: 1060px;
+    margin: 48px auto;
+}
+
+.overtitle {
+    text-transform: uppercase;
+    font-family: Popping;
+    font-size: 12px;
     font-weight: 600;
+    line-height: 18px;
+    color: #2858FF;
+    text-align: center;
+    margin-bottom: 8px;
 }
-.form-group input, select, textarea {
-    width: 90%;
-    padding: 4px;
-    font-size: 1.25rem;
-    margin-top: 4px;
-    border-radius: 8px;
-    border: 2px solid gray;
+
+.section-heading {
+    max-width: 700px;
+    line-height: 30px;
+    text-align: center;
+    margin: 0 auto;
 }
-#footer{
-    background-color: #E2E8F0;
-    padding: 8px;
-    margin-top: 32px;
+
+.section-subtitle {
+    max-width: 700px;
+    text-align: center;
+    margin: 8px auto 48px auto;
+}
+
+#pricing-boxes {
+    display: flex;
+}
+
+.pricing-box {
+    width: 33.33%;
+}
+
+.pricing-card {
+    background-color: white;
+    margin: 0 10px;
+    border-radius: 10px;
+    box-shadow: 6px 2px 25px -9px #0000001A;
+    padding: 20px;
+}
+
+.service {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #2858FF;
+}
+
+.price {
+    font-family: Poppins;
+    font-size: 36px;
+    font-weight: 700;
+    color: black;
+    line-height: 54px;
+    margin-top: 8px;
+}
+
+.price-per {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #8A8A8A;
+}
+
+.service-description {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #8B8B8B;
+    margin-top: 8px;
+}
+
+.service-benefits {
+    padding: 0;
+    list-style: unstly;
+}
+
+.service-benefits li {
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #666666;
+}
+
+.service-contact-button {
+    width: 100%;
+    height: 44px;
+    border-radius: 4px;
+    border: 2px solid #2F2F2F;
+    background-color: white;
+    color: #2F2F2F;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+}
+
+.service-contact-button:hover {
+    background-color: #2F2F2F;
+    color: white;
+    cursor: pointer;
+}
+
+.card-2 {
+    background-color: #FFD748;
+}
+
+.card-2 li {
+    color: #000000BF;
+}
+
+.card-2 .service-description {
+    color: #00000080;
+}
+
+.card-2 .service-contact-button {
+    background-color: #2F2F2F;
+    color: white;
+}
+
+.card-2 .service-contact-button:hover {
+    background-color: white;
+    color: #2F2F2F;
+    cursor: pointer;
+}
+
+#footer {
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: #000000;
+    color: white;
+    margin-top: 48px;
+}
+
+#whatido {
+    max-width: 1060px;
+    margin: 48px auto;
+}
+
+#description-section {
+    display: flex;
+}
+.description-box {
+    width: 33.33%;
+}
+.description-card{
+    background-color: white;
+    margin: 0 10px;
+    padding: 10px;
+    box-shadow: 6px 2px 25px -9px #0000001A;
+    border-radius: 10px;
+    max-width: 340px;
+
+}
+.description-heading {
+    text-transform: uppercase;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    text-align: center;
+    color: #000000;
+}
+
+.description-subtitle {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
     text-align: center;
 }
-#footer-links{
-    list-style: none;
-    padding-left: 0;
+#myprojects{
+    max-width: 1060px;
+    margin: 48px auto;
 }
-#footer-links li {
-    margin: 8px 16px;
+.myprojects-section{
+    margin-left: 10px;
+    margin-bottom: 50px;
 }
-.copyright{
-    color: #71717A;
-    font-size: 0.875rem;
+#project-image{
+    padding: 10px;
+    margin-top: -10px;
+    height: 160px;
+    width: 160px;
 }
-
-@media screen and (min-width: 576px) {
-    html{
-        font-size: 16px;
-    }
-    #logo-with-text{
-        display: block;
-    }
-    #logo{
-        display: none;
-    }
-    #banner{
-        height: 200px;
-    }
-    h1{
-        text-align: center;
-        margin: 20px 0;
-    }
-    #about{
-        margin: 0 auto;
-        display: flex;
-        max-width: 800px;
-        flex-direction: row;
-        padding: 8px;
-        
-    }
-    .form-group input, select {
-        width: auto;
-    }
-    .form-group textarea{
-        width: 80%;
-    }
-    #footer-links li{
-        display: inline;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    #banner{
-        height: 250px;
-    }
-    h1{
-        margin: 20px 0;
-    }
-    #about{
-        max-width: 800px;
-        flex-direction: row;
-    }
-    #description{
-        width: 50%;
-        padding-right: 8px;
-    }
-    #team{
-        width: 50%;
-    }
-    #jobs{
-        min-width: 800px;
-    }
-    #jobs-list{
-        display: none;
-    }
-    #jobs-table{
-        display: table;
-        width: 100%;
-        border: 1px solid gray;
-        border-collapse: collapse;
-    }
-    .jobs-header-row th {
-        border: 1px solid gray;
-        padding: 8px;
-        background-color: aliceblue;
-        text-align: center;
-    }
-    .jobs-data-row td {
-        border: 1px solid gray;
-        padding: 8px;
-    }
-    #jobs-table tr:nth-child(odd){
-        background-color: ghostwhite;
-    }
-    #application{
-        max-width: 800px;
-    }
+.project-name{
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    color: #291854;
 }

@@ -1,180 +1,275 @@
-<!DOCTYPE html>
 <html>
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>My first website</title>
+    <title>Ferdi Sahin</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div id="navbar">
-        <img id="logo" src="https://jovian.ai/jovian_icon.svg" alt="logo" height="30px">
-        <img id="logo-with-text" src="https://jovian.ai/jovian_logo.svg"
-            alt="Jovian logo with text" height="30px">
-    </div>
-    <img id="banner" src="images/career.jpg" alt="career quota">
-    <div>
-        <h1>About Jovian</h1>
-        <div id="about">
-            <div id="description">
-                <p style="margin-top: 0;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi consequatur
-                    corrupti quaerat
-                    repellendus
-                    similique, ut accusantium itaque adipisci in nostrum quasi eaque dolor esse perferendis eos aliquam
-                    molestias minus rem.</p>
-                <p>We also offer 2 industry-focused Bootcamp
-                <ol>
-                    <a href="https://google.com" target="_blank">
-                        <li>Jovian Full Stack Developer</li>
-                    </a>
-                    <a href="https://google.com" target="_blank">
-                        <li>Jovian Data Science Bootcamp</li>
-                    </a>
-                </ol> 
-                </p>
-            </div>
-            <div id="team">
-                <img id="team-image" src="images/team.jpg" alt="team working">
-            </div>
-        </div>
-        <h2>Job Opportunities</h2>
-        <div id="jobs">
-            <div id="jobs-list">
-                <div class="job">
-                    <div class="job-title">Frontend Developer</div>
-                    <div class="job-detail">Bengaluru, India</div>
-                    <div class="job-detail">R.12,00,000</div>
-                    <div class="job-detail">Posted Mar 3, 2023</div>
+    <!--HERO SECTION-->
+    <div id="hero-section">
+        <!--HERO TEXT-->
+        <div id="hero-text">
+            <!--EMAIL and PHONE-->
+            <div class="small-text">
+                (+90) 551 052 43 56
+                <div style="float: right;">
+                    ferdisahin@mail.com
                 </div>
-                <div class="job">
-                    <div class="job-title">Full Stack Developer</div>
-                    <div class="job-detail">New Delhi, India</div>
-                    <div class="job-detail">R.15,00,000</div>
-                    <div class="job-detail">Posted Feb 1, 2023</div>
-                </div>
-                <div class="job">
-                    <div class="job-title">Data Scientist</div>
-                    <div class="job-detail">San Fransisco, USA</div>
-                    <div class="job-detail">$175,000</div>
-                    <div class="job-detail">Posted Dec 22, 2022</div>
-                </div>
-                <div class="job">
-                    <div class="job-title">ML Engineer</div>
-                    <div class="job-detail">Remote</div>
-                    <div class="job-detail">$80,000</div>
-                    <div class="job-detail">Posted Dec 22, 2022</div>
-                </div>
-            </div>
-            <table id="jobs-table">
-                <tr class="jobs-header-row">
-                    <th rowspan="2">Job Title</th>
-                    <th colspan="2">Location</th>
-                    <th rowspan="2">Salary</th>
-                    <th rowspan="2">Posted on</th>
-                </tr>
-                <tr class="jobs-header-row">
-                    <th>City</th>
-                    <th>Country</th>
-                </tr>
-                <tr class="jobs-data-row">
-                    <td>Frontend Developer</td>
-                    <td>Bengaluru</td>
-                    <td>India</td>
-                    <td>R.12,00,000</td>
-                    <td>Mar 3, 2024</td>
-                </tr>
-                <tr class="jobs-data-row">
-                    <td>Full Stack Developer</td>
-                    <td>New Delhi</td>
-                    <td>India</td>
-                    <td>R.15,00,000</td>
-                    <td>Feb 1, 2024</td>
-                </tr>
-                <tr class="jobs-data-row">
-                    <td>Data Scientist</td>
-                    <td>San Francisco</td>
-                    <td>USA</td>
-                    <td>$175,000</td>
-                    <td>Dec 22, 2023</td>
-                </tr>
-                <tr class="jobs-data-row">
-                    <td>ML Engineer</td>
-                    <td colspan="2" style="text-align: center;">Remote</td>
-                    <td>$80,000</td>
-                    <td>Sept 19, 2023</td>
-                </tr>
-            </table>
-        </div>
-        <div id="application">
-            <h2>Submit Your Application</h2>
-            <form id="application-form">
-                <div class="form-group">
-                    <label for="name">Full Name</label><br>
-                    <input type="text" id="name" name="Full Name" required placeholder="Karan">
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label><br>
-                    <input type="email" id="email" name="email" required placeholder="Karan@hotmail.com">
-                </div>
-                <div class="form-group">
-                    <label for="phone">Phone</label><br>
-                    <input type="tel" id="phone" name="phone" required placeholder="+919988799086">
-                </div>
-                <div class="form-group">
-                    <label for="dob">Date of Birth</label><br>
-                    <input type="date" id="dob" name="dob" required>
-                </div>
-                <div class="form-group">
-                    <label for="position">Position Applied for</label><br>
-                    <select name="Position Applied" id="position">
-                        <option value="">Select Position</option>
-                        <option value="frontend">Frontend Developer</option>
-                        <option value="fullstack">Full Stack Developer</option>
-                        <option value="dat scientist">Data Scientist</option>
-                        <option value="ml engineer">ML Engineer</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="resume">Upload Resume</label><br>
-                    <input type="file" name="resume" id="resume">
-                </div>
-                <div class="form-group">
-                    <label for="coverletter">Cover Letter</label><br>
-                    <textarea name="coverletter" id="coverletter" rows="5"></textarea>
-                </div>
-                <div class="form-group">
-                    <label for="terms">
-                        <input type="checkbox" id="terms" name="terms" required>
-                        I agree to the Terms and Conditions
-                    </label>
-                </div>
-                <div class="form-group">
-                    <label for="Submit Application"></label>
-                    <input type="submit" id="Submit Application" name="Submit Application" value="Submit Application">
-                </div>
-            </form>
-        </div>
 
-        <div id="footer">
-            <ul id="footer-links">
-                <a href="" target="_blank">
-                    <li>Courses</li>
-                </a>
-                <a href="" target="_blank">
-                    <li>Programs</li>
-                </a>
-                <a href="https://youtube.com" target="_blank">
-                    <li>Youtube</li>
-                </a>
-            </ul>
-            <span class="copyright">© 2024, Jovin</span>
+            </div>
+            <!--NAME-->
+            <div id="hi-and-name">
+                Hi, I'm Ferdi Sahin
+            </div>
+            <!--TITLE-->
+            <div>
+                <h1>Freelance Front-end Developer and Wordpress Developer</h1>
+            </div>
+            <!--SUB-TITLE-->
+            <div class="bigtext">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quaerat laudantium voluptates reiciendis
+                dolores, blanditiis dolorem accusantium labore fugit nisi ullam architecto! Repudiandae quibusdam minus
+                et itaque nulla aliquid natus!
+            </div>
+            <!--BUTTON-->
+            <button id="contact-button" href="mailto:ferdisahin@gmail.com" target="_blank">
+                Contact Me
+            </button>
         </div>
+        <!--HERO IMAGE-->
+        <div id="hero-image-wrapper">
+            <img id="hero-image" src="images/Image.png" alt="Hero image">
+        </div>
+    </div>
+    <!--What I DO-->
+    <div id="whatido">
+        <div class="overtitle">
+            WHAT I DO
+        </div>
+        <h2 class="section-heading">With 10+ years of developer and designer experience</h2>
+        <div class="bigtext section-subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus turpis ligula, pellentesque a elit in,
+            convallis laoreet metus. Sed aliquet lacinia dictum. In pharetra nunc nisi, ac aliquet est pretium non.
+        </div>
+        <div id="description-section">
+            <div class="description-box">
+                <div class="description-card">
+                    <div class="description-heading">
+                        Front-end Development
+                    </div>
+                    <div class="description-subtitle">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus turpis ligula, pellentesque a
+                        elit
+                        in, convallis laoreet metus. Sed aliquet lacinia dictum. In pharetra nunc nisi, ac aliquet est
+                        pretium non. Fusce fringilla, sem sit amet egestas sagittis, lorem nisi aliquam metus, vitae
+                        porta
+                        ligula enim in nisl.
+                    </div>
+                </div>
+            </div>
+            <div class="description-box">
+                <div class="description-card">
+                    <div class="description-heading">
+                        BACK-end Development
+                    </div>
+                    <div class="description-subtitle">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus turpis ligula, pellentesque a
+                        elit
+                        in, convallis laoreet metus. Sed aliquet lacinia dictum. In pharetra nunc nisi, ac aliquet est
+                        pretium non. Fusce fringilla, sem sit amet egestas sagittis, lorem nisi aliquam metus, vitae
+                        porta
+                        ligula enim in nisl.
+                    </div>
+                </div>
+            </div>
+            <div class="description-box">
+                <div class="description-card">
+                    <div class="description-heading">
+                        Interface Development
+                    </div>
+                    <div class="description-subtitle">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus turpis ligula, pellentesque a
+                        elit
+                        in, convallis laoreet metus. Sed aliquet lacinia dictum. In pharetra nunc nisi, ac aliquet est
+                        pretium non. Fusce fringilla, sem sit amet egestas sagittis, lorem nisi aliquam metus, vitae
+                        porta
+                        ligula enim in nisl.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--MY PROJECTS-->
+    <div id="myprojects">
+        <div class="overtitle">
+            My Projects
+        </div>
+        <h2 class="section-heading">You can check out a few of my projects below.</h2>
+
+        <div class="bigtext section-subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus turpis ligula, pellentesque a elit in,
+            convallis laoreet metus. Sed aliquet lacinia dictum. In pharetra nunc nisi, ac aliquet est pretium non.
+        </div>
+        <div>
+            <div>
+                <img style="float: left;" id="project-image" src="images/Logo.png" alt="logo 1">
+            </div>
+            <div>
+                <div class="project-name">
+                    Project Name
+                </div>
+                <div class="myprojects-section">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus turpis ligula, pellentesque a elit
+                    in,
+                    convallis laoreet metus. Sed aliquet lacinia dictum. In pharetra nunc nisi, ac aliquet est pretium
+                    non.
+                    Fusce fringilla, sem sit amet egestas sagittis, lorem nisi aliquam metus, vitae porta ligula enim in
+                    nisl.
+                    Quisque at erat semper, scelerisque tortor id, pretium tellus.
+                </div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img style="float: left;" id="project-image" src="images/Logo (1).png" alt="logo 1">
+            </div>
+            <div>
+                <div class="project-name">
+                    Project Name
+                </div>
+                <div class="myprojects-section">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus turpis ligula, pellentesque a elit
+                    in,
+                    convallis laoreet metus. Sed aliquet lacinia dictum. In pharetra nunc nisi, ac aliquet est pretium
+                    non.
+                    Fusce fringilla, sem sit amet egestas sagittis, lorem nisi aliquam metus, vitae porta ligula enim in
+                    nisl.
+                    Quisque at erat semper, scelerisque tortor id, pretium tellus. <br>
+                    <a href="">Project link <img src="images/Frame.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div >
+            <div>
+                <img style="float: left;" id="project-image" src="images/Logo (2).png" alt="logo 1">
+            </div>
+            <div>
+                <div class="project-name">
+                    Project Name
+                </div>
+                <div class="myprojects-section">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus turpis ligula, pellentesque a elit
+                    in,
+                    convallis laoreet metus. Sed aliquet lacinia dictum. In pharetra nunc nisi, ac aliquet est pretium
+                    non.
+                    Fusce fringilla, sem sit amet egestas sagittis, lorem nisi aliquam metus, vitae porta ligula enim in
+                    nisl.
+                    Quisque at erat semper, scelerisque tortor id, pretium tellus.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="pricing-section">
+        <div class="overtitle">Pricing</div>
+        <h2 class="section-heading">
+            You can take a look at the pricing table based on the work I do.
+        </h2>
+        <div class="bigtext section-subtitle">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, excepturi! Exercitationem veritatis,
+            molestias ad adipisci corrupti quisquam temporibus reiciendis eius dignissimos dicta libero blanditiis cum
+            deleniti dolor cumque, beatae suscipit?
+        </div>
+        <div id="pricing-boxes">
+            <div class="pricing-box">
+                <div class="pricing-card">
+                    <div class="service">
+                        PSD to HTML
+                    </div>
+                    <div class="price">
+                        $99 <span class="price-per">/page</span>
+                    </div>
+                    <div class="servive-description">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                    <div class="service-benefits">
+                        <ul>
+                            <li>✓ Lorem, ipsum dolor sit amet</li>
+                            <li>✓ Lorem, ipsum dolor sit amet</li>
+                            <li>✓ Lorem, ipsum dolor sit amet</li>
+                            <li>✓ Lorem, ipsum dolor sit amet</li>
+                            <li>✓ Lorem, ipsum dolor sit amet</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <button class="service-contact-button">Service Contact</button>
+                    </div>
+                </div>
+            </div>
+            <div class="pricing-box ">
+                <div class="pricing-card card-2">
+                    <div class="service">
+                        Sketch to HTML
+                    </div>
+                    <div class="price">
+                        $99 <span class="price-per">/page</span>
+                    </div>
+                    <div class="servive-description">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                    <div class="service-benefits">
+                        <ul>
+                            <li>✓ Lorem, ipsum dolor sit amet</li>
+                            <li>✓ Lorem, ipsum dolor sit amet</li>
+                            <li>✓ Lorem, ipsum dolor sit amet</li>
+                            <li>✓ Lorem, ipsum dolor sit amet</li>
+                            <li>✓ Lorem, ipsum dolor sit amet</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <button class="service-contact-button">Service Contact</button>
+                    </div>
+                </div>
+            </div>
+            <div class="pricing-box">
+                <div class="pricing-card">
+                    <div class="service">
+                        Figma to HTML
+                    </div>
+                    <div class="price">
+                        $99 <span class="price-per">/page</span>
+                    </div>
+                    <div class="servive-description">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                    <div class="service-benefits">
+                        <ul>
+                            <li>✓ Lorem, ipsum dolor sit amet</li>
+                            <li>✓ Lorem, ipsum dolor sit amet</li>
+                            <li>✓ Lorem, ipsum dolor sit amet</li>
+                            <li>✓ Lorem, ipsum dolor sit amet</li>
+                            <li>✓ Lorem, ipsum dolor sit amet</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <button class="service-contact-button">Service Contact</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---
+    <div>Questions</div>-->
+    <div id="footer">
+        Ferdi Sahin © 2022. All Rights Reserved.
+
+    </div>
 </body>
 
 </html>
